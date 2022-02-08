@@ -24,7 +24,7 @@ app.use(bodyParser.json());
 
 app.get("/api/", (req, res) => {
     client.query(
-      "SELECT name,avg(temperature)as temperature,avg(pressure)as value from machine where time < NOW() and time > NOW() - Interval '1 minute' group by name",
+      "SELECT name,avg(temperature)as temperature,avg(pressure)as pressure from machine where time < NOW() and time > NOW() - Interval '1 minute' group by name",
       [],
       (error, results) => {
         if (error) {
@@ -52,7 +52,7 @@ app.get("/api/", (req, res) => {
 
   app.get("/api/pressure", (req, res) => {
     client.query(
-      "SELECT name,avg(pressure)as pressure from machine where time < NOW() and time > NOW() - Interval '1 minute' group by name",
+      "SELECT name,avg(pressure)as value from machine where time < NOW() and time > NOW() - Interval '1 minute' group by name",
       [],
       (error, results) => {
         if (error) {
