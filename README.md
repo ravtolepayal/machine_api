@@ -20,6 +20,7 @@
     node index.js
   
  db.js -> It fetch data from API endpoint every 5 seconds and store it in a database
+ 
  index.js -> It create an API endpoint to fetch aggregated data from database for specified interval.
  
 4.open the browser and run
