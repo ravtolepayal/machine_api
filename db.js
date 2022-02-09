@@ -22,7 +22,10 @@ setInterval(() => {
         url: "https://myfirstiiotapp.herokuapp.com/api/metrics?api_key=gKGfPhA2Sz5Rbzmw",
         json: true
     }, (err, res, body) => {
-
+        if (err) { 
+            return console.log(err); 
+        }
+        else 
         if (body.status == "success") {
             const machineRow = body.data
             const len = machineRow.length
