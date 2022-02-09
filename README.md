@@ -26,5 +26,5 @@
 
    http://localhost:8000/api/
    
-   http://localhost:3000/api/pressure 
+   http://localhost:8000/api/pressure 
     
