@@ -6,7 +6,8 @@
     - Postgresql
     
 **steps:**
-1.Install
+
+1. Install
 
     git clone https://github.com/ravtolepayal/machine_api 
     cd machine_api/
@@ -22,6 +23,7 @@
  index.js -> It create an API endpoint to fetch aggregated data from database for specified interval.
  
 4.open the browser and run
-    http://localhost:8000/api/
-    http://localhost:3000/api/pressure 
+
+   http://localhost:8000/api/
+   http://localhost:3000/api/pressure 
     
