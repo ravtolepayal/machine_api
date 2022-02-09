@@ -5,9 +5,9 @@
     - Nodejs
     - Postgresql
     
-**steps:**
+## steps:
 
-1. Install
+**1.Install**
 
     git clone https://github.com/ravtolepayal/machine_api 
     cd machine_api/
@@ -25,5 +25,6 @@
 4.open the browser and run
 
    http://localhost:8000/api/
+   
    http://localhost:3000/api/pressure 
     
